@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+
+{
+    'name' : 'Real Estate',
+    'version' : '17.0',
+    'summary': 'Real Estate Management Software',
+    'sequence': -1,
+    'description': """Real Estate  Management Software""",
+    'category': 'Real Estate/Brokerage',
+    'website': 'https://www.odoomates.tech',
+    'license':'LGPL-3',
+    'depends' : ['base'],
+    'data': [
+        'security/ir.model.access.csv',
+        # 'security/security.xml',
+        'security/estate_security.xml',
+        # 'data/data.xml',
+        'views/estate_property_views.xml',
+        # 'views/estate_property_type.xml',
+        'views/estate_property_type_views.xml',
+        'views/estate_property_tag_views.xml',
+        'views/inherited_user_views.xml',
+        # 'views/estate_property_offer_view.xml',
+        'views/menu.xml',
+    ],
+    'demo': [],
+    'qweb': [],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}
